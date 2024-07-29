@@ -135,6 +135,7 @@
   border-width: 1px;
   border-style: solid;
   padding: 10px 20px;
+  font-size: 12px;
   width: 100%;
 }
 
@@ -145,6 +146,7 @@
 .btn-login {
   border: none;
   padding: 16px 30px;
+  font-size: 12px;
   border-radius: 16px;
   box-shadow: 0 8px 21px rgba(0, 0, 0, 0.16);
 }
@@ -157,6 +159,7 @@ input[type="password"] {
   border: none;
   background: transparent;
   outline: none;
+  font-size: 12px;
 }
 ::placeholder {
   color: var(--placeholder-text);
