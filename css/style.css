@@ -176,7 +176,7 @@ input[type="password"] {
 /* login-img  */
 
 .login-img-bg {
-  background-image: url("../imgs/Rectangle.png");
+  background-image: url("../imgs/bg-img.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
