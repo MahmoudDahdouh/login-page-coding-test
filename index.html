@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App | Login</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="">
+      <div class="flex min-h-screen">
+        <!-- Login form -->
+        <div class="login-form flex-1 flex flex-center container">
+          <div class="mw-mobile align-center h-full">
+            <h2 class="uppercase font-30px text-center">login</h2>
+            <p class="text-paragraph mt-10px text-center">
+              How to i get started lorem ipsum dolor at?
+            </p>
+            <form action="/" method="post">
+              <div class="input-icon mt-24px">
+                <img src="imgs/person.svg" alt="person icon" />
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="input-icon mt-18px">
+                <img src="imgs/lock.svg" alt="lock icon" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+
+              <div class="flex flex-center mt-24px">
+                <button
+                  type="submit"
+                  class="btn-login cursor-pointer text-white capitalize bold bg-gradient"
+                >
+                  Login Now
+                </button>
+              </div>
+            </form>
+            <!-- login with others -->
+            <div class="flex flex-center gap-4px mt-24px">
+              <div class="h-px w-full bg-border"></div>
+              <p class="flex-shrink-0"><span>Login</span> with Others</p>
+              <div class="h-px w-full bg-border"></div>
+            </div>
+            <button class="btn-social cursor-pointer mt-24px">
+              <img src="imgs/google-icon.png" alt="Google icon" />
+              Login with <span class="bold">Google</span>
+            </button>
+            <button class="btn-social cursor-pointer mt-16px">
+              <img src="imgs/facebook-icon.png" alt="Facebook icon" />
+              Login with <span class="bold">Facebook</span>
+            </button>
+          </div>
+        </div>
+        <!-- login image -->
+        <div class="hidden md-flex login-img flex-1 login-img-bg flex-center">
+          <!-- <div class="login-img-bg"></div> -->
+          <div class="login-img-container">
+            <img
+              class="fluid-img"
+              src="imgs/women with tab.png"
+              alt="women with tab"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

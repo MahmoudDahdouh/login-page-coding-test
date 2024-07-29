@@ -1,0 +1,195 @@
+:root {
+  --primary-color: #5038ed;
+  --secondary-color: #9181f4;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --text: #000000;
+  --heading-text-white: #ffffff;
+  --paragraph-text: #525252;
+  --placeholder-text: #1c1c1c;
+
+  --border-color: #f0edff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Utilities classes */
+
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.fluid-img {
+  max-width: 100%;
+  height: auto;
+}
+.mw-mobile {
+  max-width: 365px;
+}
+.h-full {
+  height: 100%;
+}
+.w-full {
+  width: 100%;
+}
+.h-px {
+  height: 1px;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+/* Flex */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.align-center {
+  align-content: center;
+}
+.gap-4px {
+  gap: 4px;
+}
+/* Margin */
+.mt-10px {
+  margin-top: 10px;
+}
+.mt-16px {
+  margin-top: 16px;
+}
+.mt-18px {
+  margin-top: 18px;
+}
+.mt-24px {
+  margin-top: 24px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+/* Background */
+.bg-gradient {
+  background: linear-gradient(
+    45deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+}
+.bg-border {
+  background-color: var(--border-color);
+}
+/* Text */
+.text.black {
+  color: var(--black);
+}
+.text-white {
+  color: var(--white);
+}
+.text-paragraph {
+  color: var(--paragraph-text);
+}
+.bold {
+  font-weight: 600;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.text-center {
+  text-align: center;
+}
+.font-30px {
+  font-size: 30px;
+}
+/* Buttons */
+.btn-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  color: var(--text);
+  border-radius: 16px;
+  border-color: var(--border-color);
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.btn-social img {
+  width: 30px;
+  height: 30px;
+}
+.btn-login {
+  border: none;
+  padding: 16px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 21px rgba(0, 0, 0, 0.16);
+}
+/* Input */
+/* input just types, text and password */
+input[type="text"],
+input[type="password"] {
+  flex: 1;
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+::placeholder {
+  color: var(--placeholder-text);
+}
+
+.input-icon {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background-color: var(--border-color);
+  border-radius: 16px;
+}
+
+/* login-img  */
+
+.login-img-bg {
+  background-image: url("../imgs/Rectangle.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.login-img-container {
+  max-width: 480px;
+  padding: 24px;
+}
+/* *************************************************** */
+/* responsive */
+.hidden {
+  display: none;
+}
+
+@media (min-width: 767px) {
+  .md-flex {
+    display: flex;
+  }
+}
